@@ -11,3 +11,6 @@ True, False
 
 # floats
 3.14, 10.345
+
+# list
+my_friends = ["Csaba", "Csilla", "Kriszta", "Csaba"]
