@@ -16,3 +16,8 @@ while True:
     if not files:
         print("Couldn't find files in the folder :((")
         break
+    
+    print("-"*100)
+    for file in files:
+        print(f"Copying {file}...")
+        time.sleep(1)
