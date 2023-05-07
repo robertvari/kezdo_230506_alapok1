@@ -1,5 +1,6 @@
 import random, os, platform
 
+# create min-max range
 min = 1
 max = 10
 
@@ -10,14 +11,17 @@ os.system("cls" if platform.system() == "Windows" else "clear")
 print("-"*50, "MAGIC NUMBER", "-"*50)
 print(f"I have a number between {min} and {max}. Can you guess it?")
 
+# start game loop
 while True:
     magic_number = 5
-    max_tries = 3
+    max_tries = 3  # reset max_tries
     print(f"You can try {max_tries} times.")
 
     player_guess = input("Your guess?")
 
+    # check wrong guess
     while player_guess != magic_number:
+        # clear screen
         os.system("cls" if platform.system() == "Windows" else "clear")
         max_tries -= 1
 
